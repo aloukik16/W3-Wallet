@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>W3 Wallet</title>
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+</head>
+<body>
+    <h1>W3 Wallet</h1>
+    <div class="box">
+        <div id="mnemonic">
+            <h3>Mnemonic Phrases:</h3>
+            <p id="phrase"></p>
+            <button id="btn-ph">Generate Phrases</button>
+        </div>
+        <br>
+        <div id="pub-pri">
+            <button id="btn-wallet">Generate Wallet</button>
+            <h3>Public key:</h3>
+            <p id="public-key"></p>
+            <h3>Private key:</h3>
+            <p id="private-key"></p>
+        </div>
+    </div>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bip39/3.0.4/index.js"></script>
+    <script src="wallet.js"></script>
+</body>
+</html>
